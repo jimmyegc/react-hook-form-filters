@@ -1,7 +1,7 @@
 import { QueryClient, QueryClientProvider } from 'react-query'
 import './App.css'
 import Form from './components/Form'
-import ErrorPage from './components/ErrorPage/ErrorPage'
+// import ErrorPage from './components/ErrorPage/ErrorPage'
 
 const queryClient = new QueryClient()
 
@@ -11,7 +11,7 @@ function App() {
     <>            
       <QueryClientProvider client={queryClient}>
         <Form />        
-        <ErrorPage/>
+        {/* <ErrorPage/> */}
       </QueryClientProvider>
     </>
   )
